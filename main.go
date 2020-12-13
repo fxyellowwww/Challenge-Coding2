@@ -2,8 +2,20 @@ package main
 
 import "fmt"
 
-//รับค่า 500-9000 แล้วแสดงค่า 1-input โดยแสดงเฉพาะเลขคี่
 func main() {
+	y := 2482
+	switch y {
+	case 1946:
+		fmt.Println("1946")
+	case 9463:
+		fmt.Println("9463")
+	case 2482:
+		fmt.Println("true")
+	}
+}
+
+//รับค่า 500-9000 แล้วแสดงค่า 1-input โดยแสดงเฉพาะเลขคี่
+func a() {
 	var number int
 START:
 	fmt.Println("input number : ")
@@ -65,5 +77,30 @@ func g() {
 	x := []int{248, 428, 824}
 	for _, v := range x {
 		fmt.Printf("%d\n", v)
+	}
+}
+
+//คำสั่ง goto
+func h() {
+	var a int
+ReadInput:
+	fmt.Print("type number :")
+	fmt.Scan(&a)
+	if a < 320 {
+		goto ReadInput
+	}
+	fmt.Println(a)
+}
+
+//คำสั่ง switch
+func i() {
+	y := 2482
+	switch y {
+	case 1946:
+		fmt.Println("1946")
+	case 9463:
+		fmt.Println("9463")
+	case 2482:
+		fmt.Println("true")
 	}
 }
